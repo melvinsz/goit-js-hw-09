@@ -32,10 +32,6 @@ function onStartClick(e) {
 
     if (delta <= 0) {
       clearInterval(intervalId);
-      daysRef.textContent = '00';
-      hoursRef.textContent = '00';
-      minutesRef.textContent = '00';
-      secondsRef.textContent = '00';
       Notiflix.Notify.success('Countdown has finished!');
       return;
     }
